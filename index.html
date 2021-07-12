@@ -1,7 +1,12 @@
-<div style="text-align: center">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div style="text-align: center">
     <input type="text" placeholder="Hi ! Enter your name here :)" style="width: 200px">
     <button>OK</button>
-</div>
+   </div>
 
 
 <script>
@@ -9,12 +14,15 @@
     return `Hey ${name} you are THE BEST !!!`;
   }
 
-  const input = document.querySelector('input');
-  const button = document.querySelector('button');
+  var input = document.querySelector('input');
+  var button = document.querySelector('button');
 
-  button.addEventListener('click', () => {
+  button.addEventListener('click', function() {
     if (input.value) {
       alert(getMessage(input.value))
     }
   });
 </script>
+</body>
+
+
